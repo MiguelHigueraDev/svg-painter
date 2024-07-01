@@ -13,6 +13,7 @@ Compact web tool to recolor (paint) SVGs quickly.
 
 ## Limitations
 
+- Not responsive (for now)
 - Only supports SVGs with hexadecimal color codes
 - It uses the native HTML color picker so implementation varies widely
 
