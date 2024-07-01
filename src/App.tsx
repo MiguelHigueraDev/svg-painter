@@ -17,10 +17,14 @@ function App() {
     setSvgInput(svgInput.replace(new RegExp(oldColor, 'g'), newColor));
   };
 
+  const handleClearInput = () => {
+    setSvgInput("");
+  };
+
   return (
     <div className="flex gap-10 p-4 h-screen w-screen items-center justify-center">
       <div className="w-1/3 flex flex-col gap-14 max-w-[600px]">
-        <SVGInput svgInput={svgInput} onChange={handleInputChange} />
+        <SVGInput svgInput={svgInput} onChange={handleInputChange} onClear={handleClearInput} />
         <ColorList svgInput={svgInput} onChange={handleColorChange} />
       </div>
       <div className="w-1/3">
